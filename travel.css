@@ -1,0 +1,64 @@
+body {
+    margin: 0; /*so that the page takes up the whole screen*/
+    font-size: 2vw;
+}
+
+.header {
+    font-size: 1.2vw;
+    font-family: "Roboto", sans-serif;
+    background-color: #4794ff;
+    padding: 2rem 2rem; /*space inside header*/
+    color: #FFF;
+    display: flex; /*flexbox layout for alignment of child elements*/
+    justify-content: space-between; /*distributes child elements with space in between*/
+    align-items: center; /*vertically centers child elements*/
+    flex-wrap: wrap; /*responsive design through allowing to open a new line*/
+}
+
+.nav { /*applies to the div-box*/
+    list-style:none; /*to not have bullet point or numbers*/
+    margin: 0; /*removes default outer spacing of .nav box*/
+    padding: 0; /*removes default inner space*/
+    display: flex; /*applies flexbox layout to align list items horizontally in a single line*/
+    color: #FFF;
+}
+
+.nav li { /*just applies to list items*/
+    margin-left: 20px; /* adds 20px margin to the left of each liat item*/
+}
+
+.nav a { /*applies to links*/
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a:hover { /*applies once you hover the link*/
+    transform: scale(120%);
+    transition: all .2s ease-out;
+}
+
+.full-width-image {
+    width: 100%;
+    display: block;
+}
+
+.side-by-side {
+padding-top: 10px;
+box-sizing: border-box;
+}
+
+.side-by-side-inner {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+
+}
+
+.side-by-side-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
